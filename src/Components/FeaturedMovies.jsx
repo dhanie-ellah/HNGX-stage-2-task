@@ -35,7 +35,7 @@ const FeaturedMovies = () => {
         </p>
       </section>
 
-      <div className=' flex flex-wrap justify-between'>
+      <div className=' flex flex-wrap justify-between items-start'>
         {
           movieList.slice(0, 10).map(movie => {
             return (

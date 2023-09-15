@@ -15,12 +15,12 @@ const Moviecard = ({ movie }) => {
         key={movie.id}
         to={`/detail/${movie.id}`}
         className=" relative w-[75%] m-auto md:w-[100%]"
-        data-testid="movie-poster"
       >
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt=""
           className=" w-[100%]"
+          data-testid="movie-poster"
         />
         <FontAwesomeIcon
           icon={faHeart}
@@ -45,16 +45,12 @@ const Moviecard = ({ movie }) => {
           <div className=" flex justify-between items-center">
             <div className=" flex gap-[0.5rem]">
               <img src={IMDb} alt="" />
-              <p className=" text-sm md:text-xs">
-                {movie.vote_average}/10
-              </p>
+              <p className=" text-sm md:text-xs">{movie.vote_average}/10</p>
             </div>
 
             <div className=" flex gap-[0.5rem]">
               <img src={Fruit} alt="" />
-              <p className=" text-sm md:text-xs">
-                {movie.vote_average * 10}%
-              </p>
+              <p className=" text-sm md:text-xs">{movie.vote_average * 10}%</p>
             </div>
           </div>
 

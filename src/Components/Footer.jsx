@@ -12,13 +12,13 @@ const Footer = () => {
   return (
     <div className=" flex flex-col gap-[0.5rem]">
       <div className=" flex justify-center gap-[3rem]">
-          <FontAwesomeIcon icon={faFacebookSquare} className=" text-2xl" />
-          <FontAwesomeIcon icon={faInstagram} className=" text-2xl" />
-          <FontAwesomeIcon icon={faTwitter} className=" text-2xl" />
-          <FontAwesomeIcon icon={faYoutube} className=" text-2xl" />
+          <FontAwesomeIcon icon={faFacebookSquare} className=" text-2xl md:text-xl" />
+          <FontAwesomeIcon icon={faInstagram} className=" text-2xl md:text-xl" />
+          <FontAwesomeIcon icon={faTwitter} className=" text-2xl md:text-xl" />
+          <FontAwesomeIcon icon={faYoutube} className=" text-2xl md:text-xl" />
       </div>
 
-      <div className=" flex justify-center gap-[3rem] text-sm">
+      <div className=" flex justify-center gap-[3rem] text-sm md:text-xs">
         <a href="">Conditions of Use</a>
         <a href="">Privacy & Policy</a>
         <a href="">Press Room</a>
